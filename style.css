@@ -6,20 +6,20 @@
 }
 
 header {
-    padding: 10px 20px;
+    padding: 10px;
+    background-color: #272635;
 }
 
 header > h1 {
-    font-family: 'Poppins', sans-serif;
-    color: #1E1E24;
-    text-align: center;
     font-size: 40px;
+    font-family: 'Poppins';
+    text-align: center;
+    color: white;
 }
 
 #container {
     position: relative;
     top: 30px;
-    outline: 1px solid black;
     margin: auto;
     height: 960px;
     width: 960px;
@@ -28,10 +28,9 @@ header > h1 {
 }
 
 .grid {
-    display: inline;
     margin: 0;
     padding: 0;
-    border: none;
-    outline: 1px solid black;
+    border: 1px solid black;
+    border-radius: 1000px;
     display: inline-block;
 }
