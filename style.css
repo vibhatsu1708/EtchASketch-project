@@ -5,12 +5,4 @@
 
 .grid {
     display: grid;
-    height: 500px;
-    width: 500px;
-    grid-template-columns: auto auto auto;
-    grid-auto-flow: 50px;
-}
-.cell {
-    padding: 20px;
-    border: 1px solid black;
 }
