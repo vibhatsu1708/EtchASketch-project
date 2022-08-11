@@ -50,6 +50,13 @@ grid.addEventListener (
     }
 );
 
+// function to change the grid dimensions
+// function changeGrid () {
+//     container.removeChild(grid);
+//     let number = window.prompt("Enter a random number");
+//     generateGrid(number);   
+// }
+
 // function to reset the grid when the resetgrid button is pressed.
 function resetGrid () {
     while (grid.firstChild) {
