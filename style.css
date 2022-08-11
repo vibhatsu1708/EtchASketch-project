@@ -43,7 +43,7 @@ body {
     border: 2px solid black;
     padding: 20px;
 }
-.active {
+.mousedown {
     background-color: black;
 }
 
@@ -59,15 +59,6 @@ body {
     cursor: pointer;
 }
 
-#remove-grid-button {
-    background-color: #FE5F55;
-    border: 2px solid black;
-    border-radius: 10px;
-    color: white;
-    font-weight: 600;
-    font-size: 1.2rem;
-    padding: 10px;
-}
 #reset-grid-button {
     background-color: #FE5F55;
     border: 2px solid black;
