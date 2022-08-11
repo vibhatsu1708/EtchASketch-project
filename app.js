@@ -43,17 +43,19 @@ function generateGrid (number) {
 
 // event listener to change the color of the box when hover
 grid.addEventListener (
-    'mouseover', function (e) {
+    'mousedown', function (e) {
         if (e.target.matches('.box')) {
-            e.target.classList.add('active');
+            e.target.classList.add('mousedown');
         }
     }
 );
 
-
-// function to remove the grid when the removegrid button is pressed.
-function regenerateGrid () {
-    container.removeChild(grid);
+// function to reset the grid when the resetgrid button is pressed.
+function resetGrid () {
+    while (grid.firstChild) {
+        grid.removeChild(grid.lastChild);
+    }
+    generateGrid(number);
 }
 
 // function to generate the grid when a window is loaded.
