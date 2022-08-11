@@ -9,3 +9,4 @@ ProjectLog[2] - Update on displaying the grid, successfully displayed the grid a
 ProjectLog[3] - Successfully implemented the hover effect for the grid boxes, when the background color of the boxes change, on hovering of the mouse on the boxes.
 ProjectLog[4] - Changed the hover effect to a mousedown effect, now the background color for the boxes changes when a mousedown event occurs.
 ProjectLog[5] - Successfully implemented the reset grid button and removed the reset grid button, since i couldn't find a suitable use for it in the project.
+ProjectLog[6] - Working on the change grid function. This function would change the dimensions of the grid, when the button is pressed.
