@@ -31,16 +31,14 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 5px;
     margin-bottom: 5vh;
 }
 .column {
     display: grid;
-    gap: 5px;
 }
 
 .box {
-    border: 2px solid black;
+    border: 2px solid rgb(220, 220, 220);
     padding: 20px;
 }
 .mousedown {
@@ -57,14 +55,17 @@ body {
 }
 #buttons > input {
     cursor: pointer;
-}
-
-#reset-grid-button {
-    background-color: #FE5F55;
     border: 2px solid black;
     border-radius: 10px;
     color: white;
     font-weight: 600;
     font-size: 1.2rem;
     padding: 10px;
+}
+
+#reset-grid-button {
+    background-color: #FE5F55;
+}
+#change-grid-button {
+    background-color: #2667FF;
 }
