@@ -28,18 +28,17 @@ body {
 }
 
 .grid {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 5vh;
-}
-.column {
     display: grid;
+    height: 65vh;
+    width: 65vh;
+    grid-template-columns: repeat(var(--gridNumber), auto);
+    grid-template-rows: repeat(var(--gridNumber), auto);
 }
 
 .box {
-    border: 2px solid rgb(220, 220, 220);
-    padding: 20px;
+    border: 1px solid rgb(225, 225, 225);
+    width: auto;
+    height: auto;
 }
 .mousedown {
     background-color: black;
