@@ -6,39 +6,17 @@ grid.classList.add('grid');
 
 // window prompt will ask the user for the number of boxes to be displayed.
 let number = window.prompt("Enter a random number");
-
+let gridNumber = number;
 
 // function to create the grid
 function generateGrid (number) {
-    // measure to keep the number of boxes limited to 16 per column, to avoid overflow of boxes from the webpage.
-    if (number > 0) {
-        if (number > 16) {
-            number = 16;
-        }
+// for loop to display an equal number of boxes, based on the user provided number.
+    for (let i=1; i<=number*number; i++) {
+        let box = document.createElement('div');
+        box.classList.add('box');
+        grid.appendChild(box);
     }
-    else if (number < 0) {
-        if (number < -16) {
-            number = 16;
-        }
-        else {
-            number = -number;
-        }
-    }
-
-    for (let i=1; i<=number; i++) {
-        // creating a column element to contain the boxes per column, and then adding the class column for each column, and appending the columns to the grid element.
-        let column = document.createElement('div');
-        column.classList.add('column');
-        grid.appendChild(column);
-    
-        // loop to create an equal number of boxes per column, adding the class of box to each box in the column, and then appending the box elements to the column.
-        for (let j=1; j<=number; j++) {
-            let box = document.createElement('div');
-            box.classList.add('box');
-            column.appendChild(box);
-        }
-        container.appendChild(grid);
-    }
+    container.appendChild(grid);
 }
 
 // event listener to change the color of the box when hover
@@ -50,14 +28,16 @@ grid.addEventListener (
     }
 );
 
-// function to change the grid dimensions
-// function changeGrid () {
-//     container.removeChild(grid);
-//     let number = window.prompt("Enter a random number");
-//     generateGrid(number);   
-// }
+// function to display the grid when the window is loaded.
+window.addEventListener (
+    'load', () => {
+        generateGrid(number);
+        // sets the required property for the grid.
+        grid.style.setProperty('--gridNumber', gridNumber);
+    }
+)
 
-// function to reset the grid when the resetgrid button is pressed.
+// function to reset the grid, removes the background color classes from the box after the mousedown event occurs.
 function resetGrid () {
     while (grid.firstChild) {
         grid.removeChild(grid.lastChild);
@@ -65,7 +45,3 @@ function resetGrid () {
     generateGrid(number);
 }
 
-// function to generate the grid when a window is loaded.
-window.onload = function () {
-    generateGrid(number);
-}
