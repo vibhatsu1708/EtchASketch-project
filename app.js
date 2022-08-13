@@ -9,14 +9,16 @@ let number = window.prompt("Enter a random number");
 let gridNumber = number;
 
 // function to create the grid
-function generateGrid (number) {
-// for loop to display an equal number of boxes, based on the user provided number.
+generateGrid = (number) => {
+    // for loop to display an equal number of boxes, based on the user provided number.
     for (let i=1; i<=number*number; i++) {
         let box = document.createElement('div');
         box.classList.add('box');
         grid.appendChild(box);
     }
     container.appendChild(grid);
+    // sets the required property for the grid.
+    grid.style.setProperty('--gridNumber', gridNumber);
 }
 
 // event listener to change the color of the box when hover
@@ -28,20 +30,16 @@ grid.addEventListener (
     }
 );
 
-// function to display the grid when the window is loaded.
-window.addEventListener (
-    'load', () => {
-        generateGrid(number);
-        // sets the required property for the grid.
-        grid.style.setProperty('--gridNumber', gridNumber);
-    }
-)
-
 // function to reset the grid, removes the background color classes from the box after the mousedown event occurs.
-function resetGrid () {
+resetGrid = () => {
     while (grid.firstChild) {
         grid.removeChild(grid.lastChild);
     }
     generateGrid(number);
 }
+
+// calling the function to display the
+generateGrid(number);
+
+
 
