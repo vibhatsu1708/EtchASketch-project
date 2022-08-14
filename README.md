@@ -15,3 +15,6 @@ ProjectLog[8] - Changed the logic for displaying the grid, now there is only one
 ProjectLog[9] - Working on the create grid functionality and the continuous mousedown functionality where the user will be able to color the boxes by just dragging the mouse over the boxes and not individually clicking on them, and also want to implement this feature, with which the user will be able to color the boxes with any color of their preference. <br/>
 ProjectLog[10] - The grid is now created based on the input fed by the user in the number input field. Successfully implemented the reset grid button, and mainly changing the grid size from one particular dimension to the other. And also fixed this major bug, where the grid would suddenly dissappear when the reset button was pressed, since it wouldn't retain it's current size, and either would revert back to the original size or would just completely turn out to be a blank white box. <br/>
 ProjectLog[11] - I have completed all the basic functionalities required for completing this project. I won't be updating anything new for as of now in this project, although i do have some new features that i would like to incorporate in the future. <br/>
+
+<img width="1440" alt="Screenshot 2022-08-14 at 19 43 29" src="https://user-images.githubusercontent.com/37664832/184541008-846397cb-a437-4458-a6e6-ffd7dd91d010.png">
+
