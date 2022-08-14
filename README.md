@@ -1,7 +1,7 @@
 # EtchASketch-project
-View the project <a href="https://vibhatsu08.github.io/EtchASketch-project/">here</a>
+View the project <a href="https://vibhatsu08.github.io/EtchASketch-project/">here</a> <br/>
 Title - Etch a Sketch Project<br/>
-Description - This is basically a pixel art kind of website, where you can doodle whatever you want with a few pixels displayed on the screen in the form of a grid.
+Description - This is basically a pixel art kind of website, where you can doodle whatever you want with a few pixels displayed on the screen in the form of a grid. <br/>
 
 ProjectLog[0] - First step is to make a grid of divs in the DOM. Working on that for now. <br/>
 ProjectLog[1] - Update on displaying the grid, successfully am able to display the boxes in the container, all i need to do now is to figure out a way to display these boxes in a grid manner.<br/>
