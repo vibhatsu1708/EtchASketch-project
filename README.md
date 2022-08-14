@@ -1,5 +1,5 @@
 # EtchASketch-project
-Repository for the etch a sketch code project
+View the project <a href="https://vibhatsu08.github.io/EtchASketch-project/">here</a>
 Title - Etch a Sketch Project<br/>
 Description - This is basically a pixel art kind of website, where you can doodle whatever you want with a few pixels displayed on the screen in the form of a grid.
 
@@ -13,3 +13,5 @@ ProjectLog[6] - Working on the change grid function. This function would change 
 ProjectLog[7] - Started a new repository called webdev-playground, where i'll be experimenting with stuff that i want to incorporate into my projects. This would be like a testing ground before merging all that with the actual project. <br/>
 ProjectLog[8] - Changed the logic for displaying the grid, now there is only one loop for the grid generation, instead of the previous two loops. Successfully implemented a better solution for making the grid, when the grid is responsive, which means that based on the container's / grid's original size, the width and the height of the boxes will change based on the number given by the user. Also read a lot of documentation to figure out that some CSS properties don't exactly tie up with each other, so i had to use variables from javascript to get the job done. <br/>
 ProjectLog[9] - Working on the create grid functionality and the continuous mousedown functionality where the user will be able to color the boxes by just dragging the mouse over the boxes and not individually clicking on them, and also want to implement this feature, with which the user will be able to color the boxes with any color of their preference. <br/>
+ProjectLog[10] - The grid is now created based on the input fed by the user in the number input field. Successfully implemented the reset grid button, and mainly changing the grid size from one particular dimension to the other. And also fixed this major bug, where the grid would suddenly dissappear when the reset button was pressed, since it wouldn't retain it's current size, and either would revert back to the original size or would just completely turn out to be a blank white box. <br/>
+ProjectLog[11] - I have completed all the basic functionalities required for completing this project. I won't be updating anything new for as of now in this project, although i do have some new features that i would like to incorporate in the future. <br/>
